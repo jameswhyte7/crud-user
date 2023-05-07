@@ -8,7 +8,7 @@ class AddUserForm extends Component {
             <>
                 <div className='Main'>
                     <div>
-                        <img style={{ width: '13.6rem', marginTop: '-10px' }} className='Img' src={logo} alt='Codetrain Logo'></img>
+                        <img style={{ width: '17rem' }} className='Img' src={logo} alt='Codetrain Logo'></img>
                     </div>
 
                     <div style={{marginTop: '3rem' }} className='Container'>
