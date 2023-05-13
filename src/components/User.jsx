@@ -6,8 +6,8 @@ const User = (props) => {
         <Col md="4">
             <Card style={{ width: '16rem', marginTop: '1rem', }}>
                 <Card.Body>
-                    <Card.Subtitle className="mb-2 text-muted">CodeTrain Africa</Card.Subtitle>
-                    <Card.Title>{props.userInfo.username}</Card.Title>
+                    <Card.Subtitle className="mb-2 text-muted">Codetrain Africa</Card.Subtitle>
+                    <Card.Title>{props.userInfo.name}</Card.Title>
                     <Card.Text>
                         <p>Email: {props.userInfo.email}</p>
                         <p>Gen: {props.userInfo.gen}</p>
