@@ -11,40 +11,40 @@ class App extends Component {
     this.state = {
       users: [
         {
-          username: "BIG James",
-          email: "BIG@intcodetrainm",
+          name: "BIG James",
+          email: "BIG@codetrain.com",
           gen: 24
         },
         {
-          username: "Yaw Boison",
+          name: "Yaw Boison",
           email: "Boison@codetrain.com",
           gen: 20
         },
         {
-          username: "Richard Brandt",
+          name: "Richard Brandt",
           email: "Brandt@codetrain.com",
           gen: 17
         },
         {
-          username: "Jude Whyte",
+          name: "Jude Whyte",
           email: "JWhyte@codetrain.com",
           gen: 7
         },
         {
-          username: "Juliana Quaye",
+          name: "Juliana Quaye",
           email: "JQuaye@codetrain.com",
           gen: 7
         },
-        {
-          username: "Elon Musk",
-          email: "Musk@incodetrainom",
-          gen: 1
-        },
-
       ]
 
     }
   }
+
+  addNewUser = (user) => {
+    this.setState({
+      users: [...this.state.users, user]
+  })
+}
 
   render() {
     return (
@@ -52,7 +52,7 @@ class App extends Component {
         <Container fluid>
           <Row>
             <Col md="4">
-              <AddUserForm />
+              <AddUserForm addUser={this.addNewUser} />
             </Col>
             <Col>
               <Users usersData={this.state.users} />
